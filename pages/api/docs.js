@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const formData = new FormData();
   const newDoc = {
-    url: 'https://app-yokot-we-tuni.azurewebsites.net/api/v1/blocks',
+    url: 'https://app-yokot-we-tuni.azurewebsites.net/api/v1/gendocs?shared=false',
     rooturl: '',
     maxdepth: 1,
     maxexternaldepth: 0,
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
   };
 
   const request = new Request(
-    'https://app-yokot-we-tuni.azurewebsites.net/api/v1/blocks',
+    'https://app-yokot-we-tuni.azurewebsites.net/api/v1/gendocs?shared=false',
     {
       method: 'POST',
       headers,
